@@ -2,7 +2,8 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div id="hero" className="min-h-screen flex items-center justify-center bg-gray-900 text-white relative overflow-hidden">
+    
+    <div id="home" className="min-h-screen flex items-center justify-center bg-gray-900 text-white relative overflow-hidden">
       
       {/* Background Decor (Optional glow effect) */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/20 to-black z-0"></div>
