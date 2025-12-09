@@ -4,24 +4,27 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      description: "You are looking at it! A personal portfolio website built with React and Tailwind CSS to showcase my skills and projects.",
+      description: "You are looking at it! A personal portfolio website built with React and Tailwind CSS.",
       tech: ["React", "Tailwind", "Vite"],
       githubLink: "#",
       demoLink: "#",
+      image: "/project1.png" // <--- Ensure you have a file named project1.png in your public folder
     },
     {
       title: "E-Commerce Dashboard",
-      description: "A responsive dashboard for managing products and orders, featuring dark mode and real-time data visualization.",
+      description: "A responsive dashboard for managing products and orders, featuring dark mode.",
       tech: ["React", "Node.js", "Chart.js"],
       githubLink: "#",
       demoLink: "#",
+      image: "/project2.png" // <--- Ensure you have a file named project2.png in your public folder
     },
     {
       title: "Weather App",
-      description: "A simple application that fetches weather data from an external API and displays it based on user location.",
+      description: "A simple application that fetches weather data from an external API.",
       tech: ["JavaScript", "API Integration", "CSS"],
       githubLink: "#",
       demoLink: "#",
+      image: "/project3.png" // <--- Ensure you have a file named project3.png in your public folder
     },
   ];
 
@@ -35,19 +38,23 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-800">
-              {/* Project Image Placeholder */}
-              <div className="h-48 bg-gradient-to-r from-blue-900 to-gray-800 flex items-center justify-center">
-                <span className="text-2xl font-bold text-gray-500 opacity-50">Project Image</span>
+              
+              {/* REAL IMAGE */}
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => { e.target.src = "https://via.placeholder.com/400x200?text=Project+Image"; }} // Fallback if image not found
+                />
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">
                   {project.description}
                 </p>
                 
-                {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t, i) => (
                     <span key={i} className="bg-gray-800 text-blue-400 text-xs px-2 py-1 rounded border border-gray-700">
@@ -56,7 +63,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-4">
                   <a href={project.githubLink} className="text-gray-300 hover:text-white text-sm font-semibold transition-colors">
                     View Code &rarr;
