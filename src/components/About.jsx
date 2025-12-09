@@ -7,20 +7,21 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-900 text-white" id="about">
+    // Background: Neutral-950 to match Hero and Projects
+    <section className="py-20 bg-neutral-950 text-white" id="about">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left Column: Text */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            About <span className="text-blue-500">Me</span>
+            About <span className="text-emerald-500">Me</span>
           </h2>
-          <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+          <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
             I am a student and developer passionate about building software that solves real-world problems. 
-            I started coding in [Year], and I've been hooked ever since. 
+            I started coding in 2019, and I've been improving myself ever since. 
           </p>
-          <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-            When I'm not coding, you can find me learning new technologies, contributing to open source, or [Your Hobby].
+          <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
+            When I'm not coding, you can find me learning other cultures and history, writing short stories, or gaming during my free time.
           </p>
         </div>
 
@@ -31,7 +32,8 @@ const About = () => {
             {skills.map((skill, index) => (
               <div 
                 key={index}
-                className="px-6 py-3 bg-gray-800 rounded-lg border border-gray-700 hover:border-blue-500 hover:text-blue-400 transition-all cursor-default shadow-md"
+                // Skill Tag: Neutral background, Emerald border on hover
+                className="px-6 py-3 bg-neutral-900 rounded-lg border border-neutral-800 hover:border-emerald-500 hover:text-emerald-400 transition-all cursor-default shadow-md hover:shadow-emerald-900/20"
               >
                 {skill}
               </div>

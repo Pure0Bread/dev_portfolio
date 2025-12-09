@@ -8,7 +8,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "Vite"],
       githubLink: "#",
       demoLink: "#",
-      image: "/project1.png" // <--- Ensure you have a file named project1.png in your public folder
+      image: "/project1.png" 
     },
     {
       title: "E-Commerce Dashboard",
@@ -16,7 +16,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "Chart.js"],
       githubLink: "#",
       demoLink: "#",
-      image: "/project2.png" // <--- Ensure you have a file named project2.png in your public folder
+      image: "/project2.png" 
     },
     {
       title: "Weather App",
@@ -24,50 +24,59 @@ const Projects = () => {
       tech: ["JavaScript", "API Integration", "CSS"],
       githubLink: "#",
       demoLink: "#",
-      image: "/project3.png" // <--- Ensure you have a file named project3.png in your public folder
+      image: "/project3.png" 
     },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-black text-white">
+    // Background: Neutral-950 (Deep Dark)
+    <section id="projects" className="py-20 bg-neutral-950 text-white">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Featured <span className="text-blue-500">Projects</span>
+          Featured <span className="text-emerald-500">Projects</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-800">
+            <div 
+              key={index} 
+              // Card: Neutral-900 with subtle Emerald border on hover
+              className="bg-neutral-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-emerald-900/20 transition-all duration-300 border border-neutral-800 hover:border-emerald-500/50 group"
+            >
               
-              {/* REAL IMAGE */}
+              {/* IMAGE CONTAINER */}
               <div className="h-48 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  onError={(e) => { e.target.src = "https://via.placeholder.com/400x200?text=Project+Image"; }} // Fallback if image not found
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onError={(e) => { e.target.src = "https://via.placeholder.com/400x200?text=Project+Image"; }}
                 />
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-400 text-sm mb-4">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">
+                    {project.title}
+                </h3>
+                <p className="text-neutral-400 text-sm mb-4">
                   {project.description}
                 </p>
                 
+                {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="bg-gray-800 text-blue-400 text-xs px-2 py-1 rounded border border-gray-700">
+                    <span key={i} className="bg-neutral-800 text-emerald-400 text-xs px-2 py-1 rounded border border-neutral-700">
                       {t}
                     </span>
                   ))}
                 </div>
 
+                {/* Links */}
                 <div className="flex gap-4">
-                  <a href={project.githubLink} className="text-gray-300 hover:text-white text-sm font-semibold transition-colors">
+                  <a href={project.githubLink} className="text-neutral-300 hover:text-white text-sm font-semibold transition-colors">
                     View Code &rarr;
                   </a>
-                  <a href={project.demoLink} className="text-blue-500 hover:text-blue-400 text-sm font-semibold transition-colors">
+                  <a href={project.demoLink} className="text-emerald-500 hover:text-emerald-400 text-sm font-semibold transition-colors">
                     Live Demo &rarr;
                   </a>
                 </div>
