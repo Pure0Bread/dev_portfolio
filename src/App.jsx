@@ -1,11 +1,13 @@
-import HeroSection from './components/HeroSection';
+import HeroSection from "./components/HeroSection";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen">
+    <main className="bg-black">
       <HeroSection />
-    </div>
-  )
+      <About />
+    </main>
+  );
 }
 
-export default App
+export default App;
