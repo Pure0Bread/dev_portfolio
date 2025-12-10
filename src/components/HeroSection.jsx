@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="text-center z-10 px-4 max-w-4xl mx-auto">
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          Hi, I'm <span className="text-emerald-500">[Dzareef Azraei Bin Dzainul]</span>
+          Hi, I'm <span className="text-emerald-500">Dzareef Azraei Bin Dzainul</span>
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-neutral-400 mb-8 font-light">
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <Github size={30} />
           </a>
           <a 
-            href="https://www.linkedin.com/in/dzareef-azraei-1884b6384/" 
+            href="https://www.linkedin.com/in/dzareef-azraei/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-emerald-400 transition-colors"
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </a>
           {/* Simple Mailto Link */}
           <a 
-            href="dzareef.azraei@gmail.com" 
+            href="#contact" 
             className="text-neutral-400 hover:text-emerald-400 transition-colors"
           >
             <Mail size={30} />

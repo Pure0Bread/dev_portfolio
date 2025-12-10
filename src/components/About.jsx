@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   const skills = [
     "React", "Tailwind CSS", "JavaScript", "Node.js", 
-    "Git", "Python", "SQL", "Figma"
+    "Git", "Python", "SQL", "Figma", "Godot"
   ];
 
   return (

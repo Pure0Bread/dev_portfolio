@@ -4,24 +4,24 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      description: "You are looking at it! A personal portfolio website built with React and Tailwind CSS.",
+      description: "Here you are Dear viewer! A personal portfolio website built with React and Tailwind CSS.",
       tech: ["React", "Tailwind", "Vite"],
       githubLink: "#",
       demoLink: "#",
       image: "/project1.png" 
     },
     {
-      title: "E-Commerce Dashboard",
-      description: "A responsive dashboard for managing products and orders, featuring dark mode.",
-      tech: ["React", "Node.js", "Chart.js"],
+      title: "Logistics Management Dashboard",
+      description: "A responsive dashboard for managing Logistics.",
+      tech: ["React", "Node.js", "NivoCharts"],
       githubLink: "#",
       demoLink: "#",
       image: "/project2.png" 
     },
     {
-      title: "Weather App",
-      description: "A simple application that fetches weather data from an external API.",
-      tech: ["JavaScript", "API Integration", "CSS"],
+      title: "TME: The Malayan Emergency",
+      description: "My Final Year Project showcasing the Malayan Emergency using Game based learning, developed in GODOT.",
+      tech: ["Godot", "GDscript", "Python"],
       githubLink: "#",
       demoLink: "#",
       image: "/project3.png" 
