@@ -17,7 +17,8 @@ const Contact = () => {
             <div>
               <label className="block text-sm font-medium text-emerald-500 mb-2">Name</label>
               <input 
-                type="text" 
+                type="text"
+                name="name"
                 className="w-full px-4 py-3 bg-neutral-900 border border-neutral-800 rounded focus:outline-none focus:border-emerald-500 text-white placeholder-neutral-600 transition-colors"
                 placeholder="John Doe"
               />
@@ -37,6 +38,7 @@ const Contact = () => {
           <div>
             <label className="block text-sm font-medium text-emerald-500 mb-2">Message</label>
             <textarea 
+              name="message"
               rows="4" 
               className="w-full px-4 py-3 bg-neutral-900 border border-neutral-800 rounded focus:outline-none focus:border-emerald-500 text-white placeholder-neutral-600 transition-colors"
               placeholder="Tell me about your project..."
