@@ -7,7 +7,6 @@ const About = () => {
   ];
 
   return (
-    // Background: Neutral-950 to match Hero and Projects
     <section className="py-20 bg-neutral-950 text-white" id="about">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         

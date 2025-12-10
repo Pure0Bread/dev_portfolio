@@ -10,13 +10,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo: Clean white with a single Emerald dot */}
+          {/* Logo */}
           <div className="flex-shrink-0 font-bold text-2xl tracking-wider">
             <span className="text-white">DZA</span>
             <span className="text-emerald-500">.DEV</span>
           </div>
 
-          {/* Desktop Menu */}
+          {/* HeroSection */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (

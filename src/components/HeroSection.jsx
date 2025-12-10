@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div id="home" className="min-h-screen flex items-center justify-center bg-neutral-950 text-white relative overflow-hidden">
       
-      {/* Background Ambience */}
+      {/* Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-900/10 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="text-center z-10 px-4 max-w-4xl mx-auto">
@@ -42,7 +42,7 @@ const HeroSection = () => {
           >
             <Linkedin size={30} />
           </a>
-          {/* Simple Mailto Link */}
+          {/* Mail to Contact section */}
           <a 
             href="#contact" 
             className="text-neutral-400 hover:text-emerald-400 transition-colors"
@@ -51,7 +51,7 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* BUTTONS */}
+        {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a 
             href="#projects" 
@@ -60,10 +60,10 @@ const HeroSection = () => {
             View Projects
           </a>
 
-          {/* CV DOWNLOAD BUTTON */}
+          {/* CV download button */}
           <a 
-            href="/my-resume.pdf" // Ensure this file exists in your 'public' folder
-            download="My_Resume.pdf" // This forces the browser to download it
+            href="/my-resume.pdf"
+            download="My_Resume.pdf"
             className="flex items-center justify-center gap-2 px-8 py-3 border border-neutral-700 text-neutral-300 hover:border-emerald-500 hover:text-emerald-400 rounded font-semibold transition-all"
           >
             <FileText size={20} />
